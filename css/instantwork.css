@@ -11,7 +11,7 @@ html, body
 	left:0;
 	top:0;
 	bottom:0;
-	width: 15%;
+	width: 17%;
 	overflow:auto;
 	background:#ffffff;
 	border-right: 1px solid #e1e1e1;
@@ -28,6 +28,15 @@ html, body
 {
 	position:relative;
 	z-index:1;
+}
+
+.menu p
+{
+	display:block;
+	padding:5px 10px;
+	color:#000;
+	text-decoration:none;
+	font-weight: bold;
 }
 
 .menu a 
@@ -52,7 +61,7 @@ html, body
 }
 
 .menu ul {
-	position:relative;
+	/*position:relative;
 	left:0;
 	top:-100%;
 	z-index:-1;
@@ -60,7 +69,9 @@ html, body
 	width:0;
 	overflow:hidden;
 	background:#ffffff;
-	opacity:0;
+	opacity:0;*/
+	/*font-weight: normal !important;*/
+	
 }
 
 .menu li.active > ul 
@@ -79,4 +90,13 @@ li.active > a
 	background:#ffffff;
 	color: #f44336;
 	font-weight: bold;
+}
+
+#content {
+    width: 83%;
+    height: 100%;
+    outline: 1px solid;
+    position: absolute;
+    right: 0;
+    background: blue;
 }
