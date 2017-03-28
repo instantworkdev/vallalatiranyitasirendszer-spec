@@ -1,35 +1,56 @@
-html, body {
+html, body 
+{
 	margin:0;
 	padding:0;
 	height:100%
 }
-#fixed {
+
+#sidenav
+{
 	position:fixed;
 	left:0;
 	top:0;
 	bottom:0;
-	width:300px;
+	width: 15%;
 	overflow:auto;
-	background:#ccc;
+	background:#ffffff;
+	border-right: 1px solid #e1e1e1;
 }
-.menu, .menu ul {
+
+.menu, .menu ul 
+{
 	margin:0;
 	padding:0;
 	list-style:none;
 }
-.menu li {
+
+.menu li 
+{
 	position:relative;
 	z-index:1;
 }
-.menu a {
+
+.menu a 
+{
 	display:block;
-	border-bottom:1px solid #fff;
 	padding:5px 10px;
 	color:#000;
 	text-decoration:none;
-	transition:all .3s ease;
 }
-.menu a:hover{background:#bbb}
+
+.menu a:hover
+{
+	background:#f5f5f5;
+}
+
+.submenu a 
+{
+	display:block;
+	padding:5px 25px;
+	color:#000;
+	text-decoration:none;
+}
+
 .menu ul {
 	position:relative;
 	left:0;
@@ -38,11 +59,12 @@ html, body {
 	max-height:0;
 	width:0;
 	overflow:hidden;
-	background:#aaa;
+	background:#ffffff;
 	opacity:0;
-	transition:all .3s ease;
 }
-.menu li.active > ul {
+
+.menu li.active > ul 
+{
 	top:0;
 	z-index:2;
 	opacity:1;
@@ -50,6 +72,11 @@ html, body {
 	max-height:50em;
 	width:100%;
 	overflow:visible;
-	transition:all .3s ease;
 }
-li.active > a{background:#bbb}
+
+li.active > a
+{
+	background:#ffffff;
+	color: #f44336;
+	font-weight: bold;
+}
