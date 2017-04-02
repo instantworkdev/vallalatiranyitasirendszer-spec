@@ -95,7 +95,7 @@ li.active > a
 #content {
     width: 83%;
     height: 100%;
-    outline: 1px solid;
+    /*outline: 1px solid;*/
     position: absolute;
     right: 0;
     background: #ffffff;
