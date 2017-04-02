@@ -1,3 +1,10 @@
+*
+ {
+   font-family: Arial, Helvetica, sans-serif;
+   font-size: 12px;
+   color: #555773;
+ }
+  
 html, body 
 {
 	margin:0;
@@ -11,7 +18,7 @@ html, body
 	left:0;
 	top:0;
 	bottom:0;
-	width: 17%;
+	width: 200px;
 	overflow:auto;
 	background:#ffffff;
 	border-right: 1px solid #e1e1e1;
@@ -33,7 +40,7 @@ html, body
 .menu p
 {
 	display:block;
-	padding:5px 10px;
+	padding:5px 5px;
 	color:#000;
 	text-decoration:none;
 	font-weight: bold;
@@ -93,10 +100,42 @@ li.active > a
 }
 
 #content {
-    width: 83%;
-    height: 100%;
-    /*outline: 1px solid;*/
     position: absolute;
-    right: 0;
+	height: 100%;
+	width: -moz-calc(100% - 201px);
+    width: -webkit-calc(100% - 201px);
+    width: calc(100% - 201px);
+    left: 201px;
     background: #ffffff;
 }
+
+ #splash
+ {
+  width: 460px;
+  height: 76px;
+  position: absolute;
+  top: 47%;
+  left: 50%;
+  margin: -38px 0 0 -230px;
+  background: transparent url(splash.png) no-repeat scroll bottom left;
+ }
+
+#product
+ {
+  width: 200px;
+  height: 20px;
+  position: absolute;
+  left: 15px;
+  bottom: 5px;
+  font-weight: bold;
+ }
+
+#copyright
+ {
+  width: 200px;
+  height: 20px;
+  position: absolute;
+  right: 1px;
+  bottom: 5px;
+  font-weight: bold;
+ }
